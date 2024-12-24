@@ -454,11 +454,20 @@ function updateText() {
 // Update the text every 3 seconds to match the animation duration
 setInterval(updateText, 3000);
 
-window.addEventListener('load', function() {
-    // Scroll to a specific position or top of the page
-    window.scrollTo(0, 0); // Adjust the second parameter if needed to prevent specific section scrolling
-});
     </script>
+
+    <!-- Your JavaScript/jQuery code
+    <script>
+        $(document).ready(function() {
+            $('#hclDetails').on('show.bs.collapse', function () {
+                $('.btn').text('Read Less');
+            });
+
+            $('#hclDetails').on('hide.bs.collapse', function () {
+                $('.btn').text('Read More');
+            });
+        });
+    </script> -->
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
